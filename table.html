@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Tables</title>
+    <link rel="stylesheet" href="table.css"> 
+</head>
+<body>
+    <div class="container">
+        <aside class="side-menu">
+            <h2>Weather App</h2>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Dashboard</a></li>
+                    <li><a href="table.html">Tables</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+         
+<header class="header">
+    <input type="text" id="city-input" placeholder="Enter City Name" />
+    <button id="get-weather-btn">Get Weather</button> 
+    <select id="unit-selector">
+        <option value="metric">Celsius (°C)</option>
+        <option value="imperial">Fahrenheit (°F)</option>
+    </select>
+    <div class="user-profile">
+        <img src="/profile_picture.jpg" alt="Profile Picture">
+      
+    </div>
+    
+</header>
+
+            <div class="content-wrapper">
+
+                
+                <section class="table-section">
+                
+                    <h3>Temperature Forecast Table</h3>
+                
+                    <table id="weather-table">
+                
+                        <thead>
+                
+                            <tr>
+                
+                                <th>Date</th>
+                
+                                <th>Temperature (°C)</th>
+                
+                                <th>Weather Condition</th>
+                
+                                <th>Humidity (%)</th>
+                
+                                <th>Wind Speed (m/s)</th>
+                
+                            </tr>
+                
+                        </thead>
+                
+                        <tbody>
+                
+                         
+                
+                        </tbody>
+                
+                    </table>
+                
+                    <div class="pagination">
+                
+                        <button id="prev-page-btn">Previous</button>
+                
+                        <button id="next-page-btn">Next</button>
+                
+                    </div>                    
+                
+                </section>
+
+
+                <section class="chatbot-section">
+              
+                    <h4>Chat with WeatherBot</h4>
+              
+                    <div id="chatbox">
+              
+                        <div id="chat-output">
+              
+                            
+                        </div>
+                        
+                        <div class="chat-input">
+                        
+                            <input type="text" id="chat-input-field" placeholder="Ask a question...">
+                        
+                            <button id="send-chat-btn">Send</button>
+                        
+                        </div>
+                    
+                    </div>
+                
+                </section>
+            
+            </div>
+        
+        </main>
+    
+    </div>
+
+
+    
+    <script src="table.js"></script> 
+
+</body>
+
+</html>

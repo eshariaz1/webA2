@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Weather Dashboard</title>
+  
+    <link rel="stylesheet" href="home.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <aside class="side-menu">
+
+            <h2>Weather App</h2>
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="#">Dashboard</a></li>
+
+                    <li><a href="table.html">Tables</a></li>
+
+                </ul>
+
+            </nav>
+
+        </aside>
+
+        
+        
+        <main>  
+        
+            <header class="header">
+        
+                <input type="text" id="city-input" placeholder="Enter City Name" />
+        
+                <button id="get-weather-btn">Get Weather</button> 
+
+                <select id="unit-selector">
+        
+                    <option value="metric">Celsius (°C)</option>
+        
+                    <option value="imperial">Fahrenheit (°F)</option>
+        
+                </select>
+        
+                <div class="user-profile"></div>
+        
+            </header>          
+
+
+            
+            <section class="weather-widget">
+            
+                <h3>Weather Data Based on City</h3>
+            
+                <div id="weather-details">
+            
+                    <!-- Weather details will be dynamically loaded here -->
+            
+                    <div class="cloud"></div>
+                    <div class="sun"></div>
+                    <div class="raindrops"></div>
+
+                </div>
+            </section>
+
+
+            
+            <section class="charts">
+            
+                <div class="chart-container">
+            
+                    <h4>Vertical Bar Chart</h4>
+            
+                    <canvas id="bar-chart"></canvas> 
+            
+                </div>
+            
+            
+                <div class="chart-container">
+            
+                    <h4>Doughnut Chart</h4>
+            
+                    <canvas id="doughnut-chart"></canvas> 
+            
+                </div>
+            
+                <div class="chart-container">
+            
+                    <h4>Line Chart</h4>
+            
+                    <canvas id="line-chart"></canvas> 
+            
+                </div>
+            
+            
+            </section>
+
+
+        
+        </section>
+
+
+        
+       
+        
+        <section class="forecast-grid">
+        
+            <h4>5-Day Weather Forecast</h4>
+        
+            <div id="forecast-details">
+        
+              
+            </div>
+        
+        </section>
+        
+      
+        
+        <section class="filters">
+        
+            <h4>Filter and Sort Options</h4>
+        
+            <button id="sort-asc-btn">Sort Temperatures (Ascending)</button>
+        
+            <button id="sort-desc-btn">Sort Temperatures (Descending)</button>
+        
+            <button id="highest-temp-btn">Show Highest Temperature</button>
+        
+            <button id="rain-filter-btn">Filter Days with Rain</button>
+        
+        
+        </section>
+        
+        </main>
+    </div>
+
+
+    <div id="loading-spinner" class="spinner" style="display: none;">Loading...</div>
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script src="home.js"></script>
+
+</body>
+
+</html>
